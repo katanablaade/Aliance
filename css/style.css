@@ -19,7 +19,7 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
-  margin-left: 241px; /* Добавил сам, чтобы выровнить отступ слева в линию*/
+  margin-left: 241px; /*Добавил сам, чтобы выровнить отступ слева в линию */
   padding: 0;
 }
 .navbar {
@@ -39,7 +39,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  max-height: 970px; /* Добавил сам, чтобы сделать полоску снизу белую */
 }
 .header-image::before {
   content: "";
@@ -145,4 +144,70 @@ body {
 }
 .header-features-item:not(:last-child) {
   border-right: none;
+}
+.section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.section-title {
+  font-family: "Bebas Neue";
+  font-size: 60px;
+  line-height: 120%;
+  color: rgb(41, 45, 51);
+}
+.steps {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 30px;
+}
+.steps-item {
+  max-width: 330px;
+}
+.steps-num {
+  font-family: "Bebas Neue";
+  color: rgb(92, 142, 230);
+  font-size: 48px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+}
+.steps-num::after {
+  content: "";
+  height: 1px;
+  background: rgb(235, 235, 240);
+  width: 100%;
+  margin-left: 30px;
+}
+.steps-title {
+  color: rgb(41, 45, 51);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.steps-text {
+  color: rgb(130, 138, 153);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.steps-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(92, 142, 230);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+}
+.steps-link::before {
+  content: "";
+  height: 1px;
+  background: rgb(92, 142, 230);
+  width: 40px;
+  margin-right: 20px;
 }
