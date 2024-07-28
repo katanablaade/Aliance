@@ -269,7 +269,7 @@ body {
     background-position: center;
   }
 }
-@media (max-width: 1700px) {
+@media (max-width: 1400px) {
   html {
     font-size: 13px;
   }
@@ -277,41 +277,9 @@ body {
     background-position: center;
   }
 }
-@media (max-width: 1600px) {
-  html {
-    font-size: 12px;
-  }
-  .header-image {
-    background-position: center;
-  }
-}
-@media (max-width: 1500px) {
-  html {
-    font-size: 11px;
-  }
-  .header-image {
-    background-position: center;
-  }
-}
-@media (max-width: 1400px) {
-  html {
-    font-size: 11px;
-  }
-  .header-image {
-    background-position: center;
-  }
-}
 @media (max-width: 1300px) {
   html {
-    font-size: 10px;
-  }
-  .header-image {
-    background-position: center;
-  }
-}
-@media (max-width: 1200px) {
-  html {
-    font-size: 10px;
+    font-size: 12px;
   }
   .header-image {
     background-position: center;
