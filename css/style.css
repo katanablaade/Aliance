@@ -303,6 +303,9 @@ body {
   .navbar-button {
     padding: 1.5625rem 2.25rem;
   }
+  .header-phone {
+    gap: 0.5rem;
+  }
 }
 @media (max-width: 1200px) {
   .container {
@@ -322,13 +325,14 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-}
-@media (max-width: 1150px) {
   .steps-num::after {
     width: 10rem;
   }
+  .header-nav-item:not(:last-child) {
+    padding-right: 0;
+  }
 }
-@media (max-width: 1030px) {
+@media (max-width: 992px) {
   html {
     font-size: 12px;
   }
