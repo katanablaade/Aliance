@@ -381,8 +381,72 @@ body {
     z-index: 2;
     background-color: #fff;
     padding-top: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .mobile-menu.is-open {
     display: block;
+  }
+  .mobile-menu-nav {
+    margin: 0;
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  .mobile-menu-nav-item {
+    margin-bottom: 2rem;
+  }
+  .mobile-menu-link {
+    text-decoration: none;
+    color: rgb(41, 45, 51);
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .mobile-submenu {
+    list-style: none;
+    padding: 0;
+    padding-left: 2rem;
+    margin-top: 1rem;
+  }
+  .mobile-submenu-link {
+    text-decoration: none;
+    color: rgb(130, 138, 153);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  .mobile-phone {
+    display: block;
+    color: rgb(41, 45, 51);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 160%;
+    border-top: 1px solid rgb(235, 235, 240);
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .mobile-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mobile-info-address,
+  .mobile-info-email {
+    text-decoration: none;
+    font-style: normal;
+    color: rgb(41, 45, 51);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  .vk-inst-link {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  .mobile-submenu-item:not(:last-child) {
+    padding-bottom: 10px;
   }
 }
