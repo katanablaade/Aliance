@@ -58,7 +58,6 @@ body {
 
 .header {
   padding-top: 5.875rem;
-  min-height: 89vh;
 }
 .header-image {
   background-image: url("../img/header-img.jpeg");
@@ -181,8 +180,47 @@ body {
 }
 .header-features-item {
   padding: 1.9375rem 3.0625rem;
+  min-height: 100%;
   border: 1px solid rgba(235, 235, 240, 0.2);
   width: 18rem;
+}
+.slider-buttons {
+  display: none;
+  height: 44px;
+}
+.slider-buttons1 {
+  display: none;
+  height: 40px;
+}
+.swiper1 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+.slider-button-prev,
+.slider-button-next {
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.slider-button-next1,
+.slider-button-prev1 {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: rgb(92, 142, 230);
 }
 .header-features-text {
   font-size: 1rem;
@@ -190,9 +228,6 @@ body {
   line-height: 160%;
   margin-bottom: 0;
   margin-top: 1.0625rem;
-}
-.header-features-item:not(:last-child) {
-  border-right: none;
 }
 .section {
   margin-top: 9.25rem;
@@ -331,6 +366,15 @@ body {
   .header-nav-item:not(:last-child) {
     padding-right: 0;
   }
+  .slider-buttons {
+    display: flex;
+  }
+  .steps {
+    gap: 2rem;
+  }
+  .steps-item {
+    max-width: 16.5rem;
+  }
 }
 @media (max-width: 992px) {
   html {
@@ -462,5 +506,31 @@ body {
   }
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px);
+  }
+  .slider-buttons1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 40rem;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
+  .header-content {
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .header-title {
+    font-size: 2rem;
+  }
+  .header-content {
+    padding-top: 2rem;
   }
 }
