@@ -370,10 +370,10 @@ body {
     display: flex;
   }
   .steps {
-    gap: 2rem;
+    gap: 1rem;
   }
   .steps-item {
-    max-width: 16.5rem;
+    max-width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -510,6 +510,9 @@ body {
   .slider-buttons1 {
     display: flex;
     justify-content: flex-end;
+  }
+  .steps {
+    gap: 0;
   }
 }
 @media (max-width: 768px) {
