@@ -195,9 +195,10 @@ body {
   display: none;
   height: 44px;
 }
-.slider-buttons1 {
+.steps-buttons {
   display: none;
   height: 40px;
+  justify-content: flex-end;
 }
 .swiper1 {
   margin-left: auto;
@@ -219,8 +220,8 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-.slider-button-next1,
-.slider-button-prev1 {
+.steps-button-next,
+.steps-button-prev {
   height: 100%;
   width: 60px;
   display: flex;
@@ -520,9 +521,8 @@ body {
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-10px);
   }
-  .slider-buttons1 {
+  .steps-buttons {
     display: flex;
-    justify-content: flex-end;
   }
   .steps {
     gap: 0;
