@@ -181,9 +181,11 @@ body {
   color: #fff;
   position: relative;
 }
+.swiper-autoheight .swiper-slide {
+  height: 100%;
+}
 .header-features-item {
   padding: 1.9375rem 3.0625rem;
-  min-height: 100%;
   border: 1px solid rgba(235, 235, 240, 0.2);
   width: 18rem;
 }
@@ -252,6 +254,7 @@ body {
 }
 .steps-item {
   max-width: 18.75rem;
+  height: auto;
 }
 .steps-num {
   font-family: "Bebas Neue";
