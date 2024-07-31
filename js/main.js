@@ -54,7 +54,7 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 2,
     },
     // when window width is >= 480px
-    768: {
+    769: {
       slidesPerView: 3,
     },
     // when window width is >= 992px
@@ -62,7 +62,11 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 4,
     },
     // when window width is >= 1200px
-    1200: {
+    1000: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 1200px
+    1201: {
       slidesPerView: 5,
     },
   },
@@ -84,7 +88,7 @@ const swiper1 = new Swiper(".swiper1", {
       slidesPerView: 2,
     },
     // when window width is >= 768px
-    768: {
+    769: {
       slidesPerView: 3,
     },
     // when window width is >= 992px
