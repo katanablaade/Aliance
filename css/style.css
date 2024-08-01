@@ -393,7 +393,7 @@ body {
   font-weight: 400;
   line-height: 160%;
   margin-bottom: 20rem;
-  margin-top: 11px;
+  margin-top: 0.6875rem;
 }
 .card-image {
   width: 100%;
@@ -413,8 +413,13 @@ body {
   width: 100%;
   gap: 3.125rem;
   padding: 3.125rem;
+  transition: border 0.2s;
 }
-.card-marks-content {
+.card-mark:hover {
+  border-color: rgb(92, 142, 230);
+}
+.card-mark:hover .card-marks-title {
+  color: rgb(92, 142, 230);
 }
 .card-marks-title {
   color: rgb(41, 45, 51);
@@ -423,6 +428,7 @@ body {
   line-height: 160%;
   margin: 0;
   margin-bottom: 0.625rem;
+  transition: color 0.2s;
 }
 .card-marks-text {
   color: rgb(130, 138, 153);
@@ -430,17 +436,29 @@ body {
   font-weight: 400;
   line-height: 160%;
   margin: 0;
-  margin-right: 30px;
-}
-.card-mark-img {
-  padding: 3.125rem 30.625rem 3.125rem 3.125rem;
-  position: absolute;
+  margin-right: 1.875rem;
 }
 .card-marks-logo {
   height: 11.25rem;
+  width: 11.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
+}
+.al-blue {
+  fill: #828a99;
+  transition: fill 0.2s;
+}
+.ag-blue {
+  fill: #828a99;
+  transition: fill 0.2s;
+}
+.card-mark:hover .al-blue {
+  fill: #5c8ee6;
+}
+.card-mark:hover .ag-blue {
+  fill: #5c8ee6;
 }
 @media (max-width: 1920px) {
   .header-image {
@@ -686,6 +704,10 @@ body {
     left: 30px;
     right: 30px;
     bottom: 30px;
+  }
+  .card-marks-logo {
+    height: 100px;
+    width: 100px;
   }
 }
 @media (max-width: 576px) {
