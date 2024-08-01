@@ -94,18 +94,45 @@ body {
   gap: 1.8125rem;
   flex-basis: 100%;
   display: flex;
+  align-items: center;
+  height: 100%;
   list-style: none;
   padding-left: 3.125rem;
   margin: 0;
+}
+.header-nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .header-nav-item:not(:last-child) {
   margin-right: 2%;
 }
 .header-nav-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
   letter-spacing: 0.0063rem;
+  position: relative;
+}
+.header-nav-link::after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -1px;
+  background-color: rgb(92, 142, 230);
+  height: 2px;
+  transition: width 0.2s;
+  right: 0;
+  left: auto;
+}
+.header-nav-link:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 .header-phone {
   flex-shrink: 0;
@@ -312,6 +339,53 @@ body {
   background: rgb(92, 142, 230);
   width: 2.5rem;
   margin-right: 1.25rem;
+  transition: width 0.2s;
+}
+.steps-link:hover::before {
+  width: 60px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  flex-basis: 33%;
+  border: 1px solid rgb(235, 235, 240);
+  position: relative;
+  text-decoration: none;
+  transition: border 0.2s;
+}
+.card:hover .card-title {
+  color: rgb(92, 142, 230);
+}
+.card:hover {
+  border-color: rgb(92, 142, 230);
+}
+.card-content {
+  padding: 2.5rem 7.5rem 3.125rem 2.5rem; /*отступы возможно убрать*/
+}
+.card-title {
+  color: rgb(41, 45, 51);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+  transition: color 0.2s;
+}
+.card-text {
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 24.625rem;
+}
+.card-image {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
 }
 @media (max-width: 1920px) {
   .header-image {
@@ -388,6 +462,9 @@ body {
   }
   .steps-item {
     max-width: 100%;
+  }
+  .card {
+    flex-basis: 50%;
   }
 }
 @media (max-width: 992px) {
@@ -537,6 +614,9 @@ body {
   }
   .header-content {
     padding-top: 3rem;
+  }
+  .card {
+    flex-basis: 100%;
   }
 }
 @media (max-width: 576px) {
