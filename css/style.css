@@ -484,7 +484,7 @@ body {
     padding: 2rem;
   }
   .logo-svg {
-    max-width: 6rem;
+    width: 6rem;
   }
   .header-nav {
     padding-left: 1rem;
@@ -515,7 +515,7 @@ body {
     display: none;
   }
   .navbar {
-    height: 5rem;
+    height: 5.7rem;
   }
   .navbar-button {
     padding-left: 2rem;
@@ -563,7 +563,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.8rem;
+    padding: 2.28rem 2.41rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
   .navbar-light .mobile-menu-line {
@@ -584,6 +584,7 @@ body {
   .navbar-button .button-icon {
     display: block;
     fill: #ffffff;
+    margin: 0.6rem;
   }
   .mobile-menu {
     position: fixed;
@@ -730,5 +731,9 @@ body {
   }
   .card-marks-text {
     margin-right: 0;
+  }
+  .logo-svg {
+    width: 10rem;
+    height: 3.75rem;
   }
 }
