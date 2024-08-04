@@ -151,11 +151,14 @@ body {
   font-weight: 600;
   line-height: 160%;
   color: #ffffff;
-  background: rgb(58, 113, 209);
+  background: rgb(92, 142, 230);
   padding: 1.5625rem 3.75rem;
   border: none;
   display: inline-block;
   cursor: pointer;
+}
+.button:hover {
+  background: rgb(58, 113, 209);
 }
 .navbar-button {
   flex-shrink: 0;
@@ -227,16 +230,7 @@ body {
   height: 40px;
   justify-content: flex-end;
 }
-.swiper1 {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-  display: block;
-}
+
 .slider-button-prev,
 .slider-button-next {
   height: 100%;
@@ -279,6 +273,9 @@ body {
   margin-top: 1.5rem;
   padding-top: 0.0625rem;
   margin-bottom: 55px;
+}
+.section-title-2 {
+  display: none;
 }
 .section-title-light {
   font-family: "Bebas Neue";
@@ -690,7 +687,7 @@ body {
     font-size: 4rem;
   }
   .header-content {
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
   .card {
     flex-basis: 100%;
@@ -713,13 +710,7 @@ body {
 }
 @media (max-width: 576px) {
   .container {
-    max-width: 90%;
-  }
-  .header-title {
-    font-size: 2rem;
-  }
-  .header-content {
-    padding-top: 2rem;
+    max-width: 92%;
   }
   .card-marks-logo {
     height: 100px;
@@ -735,5 +726,162 @@ body {
   .logo-svg {
     width: 10rem;
     height: 3.75rem;
+  }
+  .seporator {
+    width: 8.3rem;
+    height: 0.1rem;
+  }
+  .header-text {
+    font-size: 1.15rem;
+    padding-top: 0;
+    word-spacing: 0.3rem;
+    letter-spacing: 0;
+    margin-bottom: 2.4rem;
+  }
+  .header-title {
+    margin: 1.4rem 0;
+    letter-spacing: 0.02rem;
+    word-spacing: 0;
+  }
+  .button {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-features {
+    margin-top: 4.3rem;
+  }
+  .header-features-item {
+    padding: 1.6rem 2.5rem;
+  }
+  .header-features-text {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .swiper-wrapper-hf {
+    height: 140px;
+  }
+  .header-image {
+    background-size: 500%;
+  }
+  .section-light {
+    margin-top: 8.4rem;
+    margin-bottom: 8.45rem;
+  }
+  .section-title-light {
+    font-size: 2.75rem;
+    margin-top: 1.6rem;
+    letter-spacing: 0.11rem;
+    margin-bottom: 2.4rem;
+  }
+  .steps-num {
+    font-size: 4rem;
+  }
+  .steps-num::after {
+    width: 19rem;
+    margin-left: 6rem;
+  }
+  .steps-title {
+    margin-top: 1rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+  }
+  .steps-text {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    padding-right: 25px;
+    letter-spacing: -0.1px;
+    margin-bottom: 2.33rem;
+    line-height: 150%;
+  }
+  .steps-link::before {
+    width: 3.3rem;
+    margin-right: 1.7rem;
+  }
+  .steps-link {
+    letter-spacing: 0.14rem;
+  }
+  .section-title {
+    display: none;
+    font-size: 2.75rem;
+    letter-spacing: 1.4px;
+    margin-bottom: 36px;
+  }
+  .card-content {
+    padding: 1.3rem 3.2rem 3.125rem 2.4rem;
+  }
+  .card-title {
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+    line-height: 133%;
+  }
+  .card-text {
+    margin-top: 0.6rem;
+    font-size: 1.2rem;
+    letter-spacing: -0.1px;
+  }
+  .card {
+    height: 430px;
+  }
+  .steps-buttons {
+    margin-top: 1.5rem;
+  }
+  .header-features {
+    height: 141px;
+  }
+  .section-title-2 {
+    font-size: 2.75rem;
+    letter-spacing: 1.4px;
+    margin-bottom: 36px;
+    font-family: "Bebas Neue";
+    line-height: 120%;
+    color: rgb(41, 45, 51);
+    margin-top: 1.5rem;
+    padding-top: 0.0625rem;
+    display: block;
+  }
+  .section {
+    margin-bottom: 7.75rem;
+  }
+  .card-mark {
+    padding: 2.2rem 2.4rem;
+  }
+  .card-marks-title {
+    margin-left: 0.64rem;
+    letter-spacing: -0.4px;
+    line-height: 134%;
+  }
+
+  .card-marks-text {
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
+  }
+  .steps-link::before {
+    content: "";
+  }
+  .steps-link:hover::before {
+    width: 3.3rem;
+  }
+  .card-mark:hover .al-blue {
+    fill: #828a99;
+  }
+  .card-mark:hover .ag-blue {
+    fill: #828a99;
+  }
+  .card-mark:hover {
+    border-color: rgb(235, 235, 240);
+  }
+  .card-mark:hover .card-marks-title {
+    color: rgb(41, 45, 51);
+  }
+  .button:hover {
+    background: rgb(92, 142, 230);
+  }
+  .card:hover .card-title {
+    color: rgb(41, 45, 51);
+  }
+  .card:hover {
+    border-color: rgb(235, 235, 240);
   }
 }
