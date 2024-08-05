@@ -259,7 +259,7 @@ body {
   margin-top: 1.0625rem;
 }
 .section {
-  margin-bottom: 9.375rem;
+  margin-bottom: 9.5rem;
 }
 .section-light {
   margin-top: 9.4rem;
@@ -272,7 +272,8 @@ body {
   color: rgb(41, 45, 51);
   margin-top: 1.5rem;
   padding-top: 0.0625rem;
-  margin-bottom: 55px;
+  margin-bottom: 3.4375rem;
+  letter-spacing: 0.02rem;
 }
 .section-title-2 {
   display: none;
@@ -403,14 +404,18 @@ body {
   display: flex;
 }
 .card-mark {
-  display: flex;
+  display: grid;
+  grid-column-gap: 3.125rem;
+  flex-basis: 50%;
   text-decoration: none;
   border: 1px solid rgb(235, 235, 240);
-  position: relative;
-  width: 100%;
-  gap: 3.125rem;
   padding: 3.125rem;
   transition: border 0.2s;
+  grid-template-columns: 11.25rem 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "logo title title"
+    "logo text text";
 }
 .card-mark:hover {
   border-color: rgb(92, 142, 230);
@@ -419,6 +424,7 @@ body {
   color: rgb(92, 142, 230);
 }
 .card-marks-title {
+  grid-area: title;
   color: rgb(41, 45, 51);
   font-size: 1.75rem;
   font-weight: 400;
@@ -428,6 +434,7 @@ body {
   transition: color 0.2s;
 }
 .card-marks-text {
+  grid-area: text;
   color: rgb(130, 138, 153);
   font-size: 1rem;
   font-weight: 400;
@@ -436,8 +443,9 @@ body {
   margin-right: 1.875rem;
 }
 .card-marks-logo {
-  height: 11.25rem;
+  grid-area: logo;
   width: 11.25rem;
+  height: 11.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -539,7 +547,21 @@ body {
   .card-marks {
     flex-wrap: wrap;
   }
+  .card-mark {
+    grid-template-columns: auto auto;
+  }
+  .card-marks-logo {
+    width: 9rem;
+    height: 9rem;
+  }
+  .card-mark {
+    grid-template-rows: 1fr 3fr;
+  }
+  .card-marks-text {
+    margin-right: 0;
+  }
 }
+
 @media (max-width: 992px) {
   html {
     font-size: 12px;
@@ -678,6 +700,12 @@ body {
   .steps {
     gap: 0;
   }
+  .card-marks {
+    flex-direction: column;
+  }
+  .card-mark {
+    grid-template-rows: 1fr 2fr;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -694,18 +722,17 @@ body {
   }
 
   .card-mark {
-    min-height: 268px;
-  }
-  .card-marks-text {
-    position: absolute;
-    top: 150px;
-    left: 30px;
-    right: 30px;
-    bottom: 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "logo title"
+      "text text";
   }
   .card-marks-logo {
     height: 100px;
     width: 100px;
+  }
+  .card-marks-text {
+    margin-top: 1.5rem;
   }
 }
 @media (max-width: 576px) {
@@ -713,12 +740,14 @@ body {
     max-width: 92%;
   }
   .card-marks-logo {
-    height: 100px;
+    height: 106px;
     width: 100px;
   }
   .card-mark {
-    gap: 1.875rem;
-    padding: 1.875rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "logo title"
+      "text text";
   }
   .card-marks-text {
     margin-right: 0;
@@ -846,9 +875,11 @@ body {
   }
   .card-mark {
     padding: 2.2rem 2.4rem;
+    grid-column-gap: 0;
+    grid-template-columns: 1fr 2fr;
   }
   .card-marks-title {
-    margin-left: 0.64rem;
+    margin-left: 30px;
     letter-spacing: -0.4px;
     line-height: 134%;
   }
@@ -856,6 +887,7 @@ body {
   .card-marks-text {
     font-size: 1.1rem;
     letter-spacing: 0.04rem;
+    margin-top: 17px;
   }
   .steps-link::before {
     content: "";
