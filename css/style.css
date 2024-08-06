@@ -410,6 +410,7 @@ body {
   text-decoration: none;
   border: 1px solid rgb(235, 235, 240);
   padding: 3.125rem;
+  padding-bottom: 0.5rem;
   transition: border 0.2s;
   grid-template-columns: 11.25rem 1fr;
   grid-template-rows: 1fr 3fr;
@@ -468,39 +469,74 @@ body {
 .founder {
   min-height: 41.25rem;
   position: relative;
+  margin-bottom: 9.25rem;
 }
 .founder-photo {
   position: absolute;
   left: 0;
-  width: 40%;
+  width: 43.74%;
   top: 0;
   min-height: 100%;
   object-fit: cover;
 }
 .founder-content {
   max-width: 45rem;
+  margin-top: 3rem;
 }
 .founder-content-wrapper {
   display: flex;
   justify-content: flex-end;
 }
-.founder-text {
+.section-title-founder {
+  font-family: "Bebas Neue";
+  font-size: 3.75rem;
+  line-height: 120%;
+  color: rgb(41, 45, 51);
+  margin-top: 1.5rem;
+  padding-top: 0.0625rem;
+  margin-bottom: 1.67rem;
+  letter-spacing: 0.02rem;
+  padding-right: 4.8125rem;
+}
+.founder-text-1 {
   color: rgb(130, 138, 153);
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.16px;
+}
+.founder-text-2 {
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 2.03rem;
+  letter-spacing: 0.16px;
 }
 .clients-wrapper {
   display: flex;
-  gap: 3.125rem;
+  gap: 3.6rem;
 }
 .clients-content {
-  flex-basis: 50%;
+  flex-basis: 46%;
+}
+.section-title-clients {
+  font-family: "Bebas Neue";
+  font-size: 3.75rem;
+  line-height: 120%;
+  color: rgb(41, 45, 51);
+  margin-top: 1.5rem;
+  padding-top: 0.0625rem;
+  margin-bottom: 2.67rem;
+  letter-spacing: 0.02rem;
+  padding-right: 3.8125rem;
 }
 .clients-list {
   list-style: none;
   padding: 0;
   columns: 2 auto;
+  column-gap: 3.75rem;
 }
 .clients-list-item {
   display: flex;
@@ -510,18 +546,23 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
+  margin-bottom: 1.25rem;
 }
+
 .clients-logo-list {
   display: flex;
   flex-wrap: wrap;
+  height: 479px;
+  width: 719px;
+  margin-top: 31px;
 }
 .clients-logo-item {
-  flex-basis: 33%;
+  flex-basis: 33.33%;
   border: 1px solid rgb(235, 235, 240);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 1.0625rem;
 }
 .clients-logo {
   max-width: 100%;
@@ -531,7 +572,35 @@ body {
 .clients-logo:hover {
   filter: grayscale(0);
 }
-
+.section-title-clients-2 {
+  display: none;
+}
+.section-title-founder-2 {
+  display: none;
+}
+.button-link-founder {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(92, 142, 230);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+}
+.button-link-founder::before {
+  content: "";
+  height: 0.0625rem;
+  background: rgb(92, 142, 230);
+  width: 2.5rem;
+  margin-right: 1.25rem;
+  transition: width 0.2s;
+}
+.button-link-founder:hover::before {
+  width: 60px;
+}
+.button-link-founder-2 {
+  display: none;
+}
 @media (max-width: 1920px) {
   .header-image {
     background-position: center;
@@ -546,6 +615,9 @@ body {
   }
   .header-nav {
     gap: 1rem;
+  }
+  .clients-content {
+    flex-basis: 60%;
   }
 }
 @media (max-width: 1460px) {
@@ -635,6 +707,15 @@ body {
   }
   .clients-logo-list {
     flex-shrink: 10;
+  }
+  .clients-wrapper {
+    flex-direction: column;
+  }
+  .section-title-clients {
+    padding-right: 21.8125rem;
+  }
+  .clients-list {
+    column-gap: 0;
   }
 }
 
@@ -782,8 +863,8 @@ body {
   .card-mark {
     grid-template-rows: 1fr 2fr;
   }
-  .clients-wrapper {
-    flex-direction: column;
+  .founder-photo {
+    width: 38.74%;
   }
 }
 @media (max-width: 768px) {
@@ -817,6 +898,12 @@ body {
     position: relative;
     width: 100%;
     margin-bottom: 3.125rem;
+  }
+  .section-title-clients {
+    padding-right: 2.9rem;
+  }
+  .clients-logo-list {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -903,7 +990,7 @@ body {
   .steps-text {
     font-size: 1.2rem;
     margin-top: 0.4rem;
-    padding-right: 25px;
+    padding-right: 2rem;
     letter-spacing: -0.1px;
     margin-bottom: 2.33rem;
     line-height: 150%;
@@ -945,8 +1032,8 @@ body {
   }
   .section-title-2 {
     font-size: 2.75rem;
-    letter-spacing: 1.4px;
-    margin-bottom: 36px;
+    letter-spacing: 0.12rem;
+    margin-bottom: 3rem;
     font-family: "Bebas Neue";
     line-height: 120%;
     color: rgb(41, 45, 51);
@@ -963,7 +1050,7 @@ body {
     grid-template-columns: 1fr 2fr;
   }
   .card-marks-title {
-    margin-left: 30px;
+    margin-left: 2.49rem;
     letter-spacing: -0.4px;
     line-height: 134%;
   }
@@ -971,7 +1058,7 @@ body {
   .card-marks-text {
     font-size: 1.1rem;
     letter-spacing: 0.04rem;
-    margin-top: 17px;
+    margin-top: 1.4rem;
   }
   .button-link::before {
     content: "";
@@ -1005,5 +1092,93 @@ body {
   }
   .clients-logo-item {
     flex-basis: 50%;
+  }
+  .section-title-clients {
+    display: none;
+  }
+  .section-title-founder {
+    display: none;
+  }
+  .founder-photo {
+    margin-top: 0.7rem;
+  }
+  .founder-content {
+    margin-top: 0.9rem;
+  }
+  .section-title-founder-2 {
+    font-size: 2.75rem;
+    letter-spacing: 1.45px;
+    margin-bottom: 1.2rem;
+    font-family: "Bebas Neue";
+    line-height: 127%;
+    color: rgb(41, 45, 51);
+    margin-top: 1.5rem;
+    padding-top: 0.0625rem;
+    display: block;
+  }
+  .founder-text-1 {
+    font-size: 1.17rem;
+    line-height: 157%;
+    margin-bottom: 0.7rem;
+  }
+  .founder-text-2 {
+    font-size: 1.17rem;
+    line-height: 157%;
+    margin: 0;
+    margin-bottom: 1.7rem;
+  }
+  .founder {
+    margin-bottom: 8.2rem;
+  }
+  .section-title-clients-2 {
+    font-size: 2.75rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 2.7rem;
+    font-family: "Bebas Neue";
+    line-height: 130%;
+    color: rgb(41, 45, 51);
+    margin-top: 1.5rem;
+    padding-top: 0.0625rem;
+    display: block;
+  }
+  .clients-list-item {
+    font-size: 1.19rem;
+    gap: 1.6rem;
+  }
+  .clients-logo {
+    max-width: 35%;
+  }
+  .clients-logo-list {
+    margin-top: 0;
+  }
+  .clients-wrapper {
+    gap: 0;
+  }
+  .clients-logo-list {
+    height: 550px;
+  }
+  .clients-list {
+    margin-bottom: 1.31rem;
+  }
+  .button-link-founder-2 {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(92, 142, 230);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.0125rem;
+  }
+  .button-link-founder-2::before {
+    content: "";
+    height: 0.0625rem;
+    background: rgb(92, 142, 230);
+    width: 3.3rem;
+    margin-right: 1.7rem;
+    transition: width 0.2s;
+  }
+  .button-link-founder {
+    display: none;
   }
 }
