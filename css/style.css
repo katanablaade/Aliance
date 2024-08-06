@@ -1181,4 +1181,10 @@ body {
   .button-link-founder {
     display: none;
   }
+  .clients-logo:hover {
+    filter: grayscale(100%);
+  }
+  .clients-logo {
+    filter: grayscale(100%);
+  }
 }
