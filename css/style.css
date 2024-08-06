@@ -466,6 +466,7 @@ body {
   fill: #5c8ee6;
 }
 .founder {
+  min-height: 41.25rem;
   position: relative;
 }
 .founder-photo {
@@ -473,7 +474,7 @@ body {
   left: 0;
   width: 40%;
   top: 0;
-  min-height: 41.25rem;
+  min-height: 100%;
   object-fit: cover;
 }
 .founder-content {
@@ -488,6 +489,42 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
+}
+.clients-wrapper {
+  display: flex;
+  gap: 3.125rem;
+}
+.clients-content {
+  flex-basis: 50%;
+}
+.clients-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 auto;
+}
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: rgb(41, 45, 51);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.clients-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients-logo-item {
+  flex-basis: 33%;
+  border: 1px solid rgb(235, 235, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.clients-logo {
+  max-width: 100%;
 }
 @media (max-width: 1920px) {
   .header-image {
@@ -586,6 +623,12 @@ body {
   }
   .founder-content {
     max-width: 35rem;
+  }
+  .clients-content {
+    flex-basis: 60%;
+  }
+  .clients-logo-list {
+    flex-shrink: 10;
   }
 }
 
@@ -732,6 +775,9 @@ body {
   }
   .card-mark {
     grid-template-rows: 1fr 2fr;
+  }
+  .clients-wrapper {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -947,5 +993,11 @@ body {
   }
   .card:hover {
     border-color: rgb(235, 235, 240);
+  }
+  .clients-list {
+    columns: 1;
+  }
+  .clients-logo-item {
+    flex-basis: 50%;
   }
 }
