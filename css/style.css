@@ -525,7 +525,13 @@ body {
 }
 .clients-logo {
   max-width: 100%;
+  filter: grayscale(100%);
+  cursor: pointer;
 }
+.clients-logo:hover {
+  filter: grayscale(0);
+}
+
 @media (max-width: 1920px) {
   .header-image {
     background-position: center;
