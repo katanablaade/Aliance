@@ -108,4 +108,14 @@ const stepsBlog = new Swiper(".blog-slider", {
     nextEl: ".blog-button-next",
     prevEl: ".blog-button-prev",
   },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 2,
+    },
+  },
 });
