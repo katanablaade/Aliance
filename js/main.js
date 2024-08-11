@@ -29,7 +29,7 @@ const closeMenu = (event) => {
   menu.classList.remove("is-open"); // убирает класс is-open
   mMenuToggle.classList.remove("close-menu");
   document.body.style.overflow = ""; // возвращает прокрутку сайта под меню
-  lightModeOff(); // дополнительно выключаем lightMode
+  this.scrollY > 1 ? lightModeOn() : lightModeOff();
 };
 
 window.addEventListener("scroll", () => {
