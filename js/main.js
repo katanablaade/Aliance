@@ -9,14 +9,15 @@ const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
   logo.style.display = "block";
   logoLight.style.display = "none";
+  mMenuToggle.classList.add("mobile-menu-toggle-light");
 };
 const lightModeOff = (event) => {
   // присвоили класс на убирание белой шапки грубо говоря
   navbar.classList.remove("navbar-light");
   logo.style.display = "none";
   logoLight.style.display = "block";
+  mMenuToggle.classList.remove("mobile-menu-toggle-light");
 };
-
 const openMenu = (event) => {
   // функция открывания меню
   menu.classList.add("is-open"); // вешает класс is-open

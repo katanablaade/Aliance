@@ -1052,6 +1052,9 @@ body {
   .navbar {
     height: 5.7rem;
   }
+  .navbar-light {
+    height: 4rem;
+  }
   .navbar-button {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1171,6 +1174,19 @@ body {
     justify-content: space-between;
     padding: 2.28rem 2.41rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
+    transition: 0.2s;
+  }
+  .mobile-menu-toggle-light {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.4rem 2.5rem;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
+  }
+  .close-menu {
+    padding: 1.3rem 3.1rem;
   }
   .navbar-light .mobile-menu-line {
     background-color: #333;
@@ -1178,7 +1194,7 @@ body {
   .mobile-menu-line {
     height: 1px;
     background-color: #fff;
-    width: 100%;
+    width: 20px;
     transition: transform 0.2s;
   }
   .mobile-menu-line:nth-child(2) {
