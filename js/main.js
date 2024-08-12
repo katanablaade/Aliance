@@ -130,22 +130,25 @@ modalToggle.forEach((element) => {
   element.addEventListener("click", (event) => {
     event.preventDefault();
     modal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
   });
 });
 modalClose.addEventListener("click", (event) => {
   event.preventDefault();
   modal.classList.remove("is-open");
+  document.body.style.overflow = "";
 });
 
 document.addEventListener("keydown", (event) => {
-  event.preventDefault();
   if (event.key === "Escape") {
     modal.classList.remove("is-open");
+    document.body.style.overflow = "";
   }
 });
-modal.addEventListener("click", (e) => {
+modal.addEventListener("mousedown", (e) => {
   const elementClick = e.composedPath().includes(modalDialog);
   if (!elementClick) {
     modal.classList.remove("is-open");
+    document.body.style.overflow = "";
   }
 });
