@@ -776,7 +776,7 @@ body {
   line-height: 160%;
 }
 .footer-top {
-  padding-top: 3.3rem;
+  padding-top: 3.1rem;
   padding-bottom: 2.7rem;
   display: flex;
   align-items: center;
@@ -858,6 +858,10 @@ body {
   line-height: 160%;
   margin-bottom: 0.9375rem;
   display: block;
+  position: relative;
+}
+.footer-menu-link:hover {
+  color: #5c8ee6;
 }
 .footer-menu-link-bold {
   color: rgb(41, 45, 51);
@@ -1075,6 +1079,9 @@ body {
   .navbar-button {
     padding-left: 2rem;
     padding-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .steps-num::after {
     width: 10rem;
@@ -1219,6 +1226,10 @@ body {
   }
   .navbar-button .button-text {
     display: none;
+  }
+  .logo-svg {
+    width: 10rem;
+    height: 3.75rem;
   }
   .navbar-button .button-icon {
     display: block;
@@ -1384,8 +1395,12 @@ body {
     flex-direction: column;
   }
   .footer-copyright {
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.9rem;
     margin-top: 0;
+    color: rgb(130, 138, 153);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 160%;
   }
   .footer-policy {
     margin-bottom: 0.625rem;
@@ -1417,6 +1432,9 @@ body {
     font-weight: 600;
     line-height: 160%;
   }
+  .footer-menu-link:hover {
+    color: rgb(130, 138, 153);
+  }
   .footer-title {
     padding-left: 0;
   }
@@ -1429,12 +1447,6 @@ body {
   }
   .footer-menu-list {
     margin-top: 0.7rem;
-  }
-  .footer-copyright {
-    color: rgb(130, 138, 153);
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 160%;
   }
   .footer-policy {
     color: rgb(130, 138, 153);
@@ -1921,5 +1933,8 @@ body {
   .modal-form-button {
     height: 62px;
     margin-bottom: 18px;
+  }
+  .footer-menu-link:hover {
+    color: rgb(130, 138, 153);
   }
 }
