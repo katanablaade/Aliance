@@ -122,33 +122,21 @@ const stepsBlog = new Swiper(".blog-slider", {
 });
 
 const modal = document.querySelector(".modal");
-const modalToggle = document.querySelectorAll("[data-toggle=modal]");
-const modalClose = document.querySelector(".modal-close");
 const modalDialog = document.querySelector(".modal-dialog");
 
-modalToggle.forEach((element) => {
-  element.addEventListener("click", (event) => {
+document.addEventListener("mousedown", (event) => {
+  if (
+    event.target.dataset.toggle == "modal" ||
+    event.target.parentNode.dataset.toggle == "modal" ||
+    (!event.composedPath().includes(modalDialog) &&
+      modal.classList.contains("is-open"))
+  ) {
     event.preventDefault();
-    modal.classList.add("is-open");
-    document.body.style.overflow = "hidden";
-  });
-});
-modalClose.addEventListener("click", (event) => {
-  event.preventDefault();
-  modal.classList.remove("is-open");
-  document.body.style.overflow = "";
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    modal.classList.remove("is-open");
-    document.body.style.overflow = "";
+    modal.classList.toggle("is-open");
   }
 });
-modal.addEventListener("mousedown", (e) => {
-  const elementClick = e.composedPath().includes(modalDialog);
-  if (!elementClick) {
-    modal.classList.remove("is-open");
-    document.body.style.overflow = "";
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Escape" && modal.classList.contains("is-open")) {
+    modal.classList.toggle("is-open");
   }
 });
