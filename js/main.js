@@ -3,21 +3,21 @@ const logoLight = document.querySelector(".logo-light");
 const logo = document.querySelector(".logo");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
+const isFront = document.body.classList.contains("front-page");
 
 const lightModeOn = (event) => {
   // присвоили класс на белую шапку грубо говоря
   navbar.classList.add("navbar-light");
-  logo.style.display = "block";
-  logoLight.style.display = "none";
-  mMenuToggle.classList.add("mobile-menu-toggle-light");
 };
 const lightModeOff = (event) => {
   // присвоили класс на убирание белой шапки грубо говоря
   navbar.classList.remove("navbar-light");
-  logo.style.display = "none";
-  logoLight.style.display = "block";
-  mMenuToggle.classList.remove("mobile-menu-toggle-light");
 };
+
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
+};
+
 const openMenu = (event) => {
   // функция открывания меню
   menu.classList.add("is-open"); // вешает класс is-open
@@ -34,7 +34,10 @@ const closeMenu = (event) => {
 };
 
 window.addEventListener("scroll", () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff(); // формулировка вопроса - если да, то 'действие 1', иначе 'действие 2'
+  this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem"); // формулировка вопроса - если да, то 'действие 1', иначе 'действие 2'
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 });
 mMenuToggle.addEventListener("click", (event) => {
   event.preventDefault();
