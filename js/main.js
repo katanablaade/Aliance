@@ -8,10 +8,12 @@ const isFront = document.body.classList.contains("front-page");
 const lightModeOn = (event) => {
   // присвоили класс на белую шапку грубо говоря
   navbar.classList.add("navbar-light");
+  changeNavHeight("4rem");
 };
 const lightModeOff = (event) => {
   // присвоили класс на убирание белой шапки грубо говоря
   navbar.classList.remove("navbar-light");
+  changeNavHeight("5.7rem");
 };
 
 const changeNavHeight = (height) => {
@@ -34,9 +36,14 @@ const closeMenu = (event) => {
 };
 
 window.addEventListener("scroll", () => {
-  this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem"); // формулировка вопроса - если да, то 'действие 1', иначе 'действие 2'
+  this.scrollY > 1 ? changeNavHeight("4rem") : changeNavHeight("5.7rem"); // формулировка вопроса - если да, то 'действие 1', иначе 'действие 2'
   if (isFront) {
     this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
+  if (this.scrollY > 1) {
+    mMenuToggle.classList.add("toggle-with-scroll");
+  } else {
+    mMenuToggle.classList.remove("toggle-with-scroll");
   }
 });
 mMenuToggle.addEventListener("click", (event) => {
