@@ -243,6 +243,23 @@
           </div>
         </form>
       </div>
+
+
+      <div class="modal-dialog">
+        <img src="img/modal-image.png" alt="modal-image" class="modal-image">
+        <a href="#" class="modal-close" data-toggle="modal">
+          <svg class="close-icon">
+            <use href="img/sprite.svg#close"></use>
+          </svg>
+        </a>
+        <h2 class="modal-title">Спасибо за заявку!</h2>
+        <p class="modal-text">
+        Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
+        <button type="submit" class="button modal-form-button">
+        Вернуться на главную
+            </button>
+      </div>
     </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/just-validate.production.min.js"></script>

@@ -989,10 +989,14 @@ body {
   font-style: normal;
   font-family: "Bebas Neue";
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 120%;
   margin-top: 0;
   margin-bottom: 1.6875rem;
+}
+.modal-image {
+  margin-bottom: 1.875rem;
+  max-width: 100%;
 }
 .modal-text {
   color: rgb(130, 138, 153);
