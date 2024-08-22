@@ -178,10 +178,10 @@
         <!-- /.footer-wrapper -->
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="close-icon">
             <use href="img/sprite.svg#close"></use>
           </svg>
@@ -243,11 +243,11 @@
           </div>
         </form>
       </div>
-
-
+    </div>
+    <div class="modal" id="alert-modal">
       <div class="modal-dialog">
         <img src="img/modal-image.png" alt="modal-image" class="modal-image">
-        <a href="#" class="modal-close" data-toggle="modal">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
           <svg class="close-icon">
             <use href="img/sprite.svg#close"></use>
           </svg>
