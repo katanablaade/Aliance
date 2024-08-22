@@ -207,8 +207,16 @@ forms.forEach((form) => {
               /* если клик в пустую область (не диалог) */
               if (!event.composedPath().includes(modalDialog)) {
                 /* закрываем окно */
-                currentModal.classList.remove("is-open");
               }
+              const modalCloseButton = document.querySelectorAll(
+                "[data-toggle=modal-close]"
+              );
+              modalCloseButton.forEach((button) => {
+                button.addEventListener("click", (event) => {
+                  event.preventDefault();
+                  currentModal.classList.remove("is-open");
+                });
+              });
             });
           } else {
             alert(response.statusText);
