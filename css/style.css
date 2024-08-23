@@ -268,6 +268,9 @@ body {
   margin-bottom: 0;
   margin-top: 1.0625rem;
 }
+.header-features-text-black {
+  color: rgb(41, 45, 51);
+}
 .section {
   margin-bottom: 9.5rem;
 }
@@ -650,6 +653,9 @@ body {
   line-height: 160%;
   margin-bottom: 0.625rem;
   margin-top: 0;
+}
+.blog-card-title-about {
+  display: none;
 }
 .blog-card-text {
   color: rgb(255, 255, 255);
@@ -1081,6 +1087,26 @@ body {
   font-weight: 400;
   line-height: 160%;
 }
+.crumb-item-white {
+  text-decoration: none;
+  position: relative;
+  margin-right: 2.125rem;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.crumb-item-white::after {
+  content: "";
+  position: absolute;
+  width: 0.875rem;
+  height: 1px;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 10px;
+}
 .crumb-item::after {
   content: "";
   position: absolute;
@@ -1093,6 +1119,9 @@ body {
 }
 .breadcrumb-item:last-child .crumb-item {
   color: rgb(41, 45, 51);
+}
+.breadcrumb-item:last-child .crumb-item-white {
+  color: rgb(255, 255, 255);
 }
 .breadcrumb-item:last-child .crumb-item::after {
   display: none;
@@ -2037,5 +2066,8 @@ body {
   }
   .footer-menu-link:hover {
     color: rgb(130, 138, 153);
+  }
+  .section-title-image {
+    color: rgb(255, 255, 255);
   }
 }

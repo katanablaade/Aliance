@@ -4,11 +4,11 @@
    if (!empty($block_title)) {
     echo '<div class="seporator"></div>';
     echo '<h2 class="section-title">'. $block_title .'</h2>';
+    echo '<h2 class="section-title-2">'. $block_title .'</h2>';
    }
    ?>
-    <h2 class="section-title-2">собственные марки</h2>
     <div class="card-marks">
-      <a href="#" class="card-mark">
+      <a href="./ag-tech.php" class="card-mark">
         <svg class="card-marks-logo">
           <use class="ag-blue" href="img/sprite.svg#ag"></use>
          </svg>

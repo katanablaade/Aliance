@@ -20,13 +20,13 @@
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">О компании</a>
+          <a href="./about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <a href="./contracts.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+              <a class="mobile-submenu-link" href="./avto-chemical.php">Автомобильная химия</a>
             </li>
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Бытовая химия</a>
@@ -50,10 +50,10 @@
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Собственные марки</a>
+          <a href="./trademarks.php" class="mobile-menu-link">Собственные марки</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a class="mobile-submenu-link" href="#">Автохимия AG-Tech</a>
+              <a class="mobile-submenu-link" href="./ag-tech.php">Автохимия AG-Tech</a>
             </li>
             <li class="mobile-submenu-item">
               <a class="mobile-submenu-link" href="#">Автохимия AP</a>
@@ -61,10 +61,10 @@
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Новости</a>
+          <a href="./news.php" class="mobile-menu-link">Новости</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контакты</a>
+          <a href="./contacts.php" class="mobile-menu-link">Контакты</a>
         </li>
       </ul>
       <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
@@ -142,7 +142,7 @@
         <div class="inside-header-wrapper">
          <?php
          if (!empty($back_image)) {
-         echo ' <img
+         echo '<img
           class= "back-inside-header-image"
           src="img/back-inside-header-image.png"
           alt="back-inside-header-image"
@@ -156,23 +156,23 @@
               <div class="inside-header-title">
                 <div class="seporator"></div>
                 <h2 class="section-title <?= $header_style ?>"><?= $page_title ?></h2>
-                <h2 class="section-title-2 section-title-image"><?= $page_title ?></h2>
+                <h2 class="section-title-2 <?= $header_style ?>"><?= $page_title ?></h2>
                 <ul class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="#" class="crumb-item">Главная</a>
+                    <a href="#" class="crumb-item <?= $crumb_item ?>">Главная</a>
                   </li>
                   <li class="breadcrumb-item">
-                    <a href="#" class="crumb-item"><?= $page_title ?></a>
+                    <a href="#" class="crumb-item <?= $crumb_item ?>"><?= $page_title ?></a>
                   </li>
                 </ul>
               </div>
-              <img
-                class="inside-header-image"
-                src="img/inside-header.png"
-                alt="inside-header-image"
-              />
+              <?php
+             if (!empty($inside_image)) {
+             echo '<img class="inside-header-image" src="img/inside-header.png" alt="inside-header-image" />';
+             }
+             ?>
             </div>
-          </div>
+          </div>     
         </section>
       </div>
     </div>
