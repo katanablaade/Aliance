@@ -365,37 +365,7 @@
         </div>
       </div>
     </section>
-    <section class="section marks">
-      <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title">собственные торговые марки</h2>
-        <h2 class="section-title-2">собственные марки</h2>
-        <div class="card-marks">
-          <a href="#" class="card-mark">
-            <svg class="card-marks-logo">
-              <use class="ag-blue" href="img/sprite.svg#ag"></use>
-            </svg>
-            <h3 class="card-marks-title">Автохимия AG-Tech</h3>
-            <p class="card-marks-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </a>
-          <a href="#" class="card-mark">
-            <svg class="card-marks-logo">
-              <use class="al-blue" href="img/sprite.svg#al"></use>
-            </svg>
-            <h3 class="card-marks-title">Автохимия AP</h3>
-            <p class="card-marks-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
+    <?php $block_title = "собственные торговые марки"; include_once('./template-parts/trademarks-block.php')?>
     <section class="section founder">
       <img class="founder-photo" src="img/founder.jpeg" alt="founder" />
       <div class="container">
