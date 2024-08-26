@@ -8,7 +8,7 @@ html {
   font-family: "Bebas Neue";
   src: url("BebasNeueLight.eot");
   src: url("../fonts/BebasNeueBook.woff") format("woff");
-
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
