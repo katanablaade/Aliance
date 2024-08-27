@@ -1,3 +1,5 @@
+@import url("normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -70,8 +72,11 @@ body {
 .header {
   padding-top: 5.875rem;
 }
-.header-image {
+.no-webp .header-image {
   background-image: url("../img/header-img.jpeg");
+}
+.header-image {
+  background-image: url("../img/header-img.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -3.375rem;
