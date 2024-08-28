@@ -1600,146 +1600,176 @@ body {
   .footer-author {
     gap: 15px;
   }
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 40rem;
+  .button-link:hover::before {
+    width: 3.3rem;
   }
-  .header-title {
-    font-size: 4rem;
+  .card-mark:hover .al-blue {
+    fill: #828a99;
   }
-  .header-content {
-    padding-top: 4rem;
+  .card-mark:hover .ag-blue {
+    fill: #828a99;
   }
-  .card {
-    flex-basis: 100%;
+  .card-mark:hover {
+    border-color: rgb(235, 235, 240);
   }
-  .card-mark {
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "logo title"
-      "text text";
+  .card-mark:hover .card-marks-title {
+    color: rgb(41, 45, 51);
   }
-  .card-marks-logo {
-    height: 100px;
-    width: 100px;
+  .button:hover {
+    background: rgb(92, 142, 230);
   }
-  .card-marks-text {
-    margin-top: 1.5rem;
+  .card:hover .card-title {
+    color: rgb(41, 45, 51);
   }
-  .founder-photo {
-    position: relative;
-    width: 100%;
-    margin-bottom: 3.125rem;
+  .card:hover {
+    border-color: rgb(235, 235, 240);
   }
-  .section-title-clients {
-    padding-right: 2.9rem;
+  .footer-menu-link:hover {
+    color: rgb(130, 138, 153);
   }
-  .clients-logo-list {
-    width: 100%;
-  }
-  .input-group-wrapper {
-    width: 100%;
-  }
-  .input-group {
-    height: 62px;
-    width: 100%;
-    margin-bottom: 1.65rem;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 92%;
-  }
-  .card-marks-logo {
-    height: 106px;
-    width: 100px;
-  }
-  .card-mark {
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "logo title"
-      "text text";
-  }
-  .card-marks-text {
-    margin-right: 0;
-  }
-  .logo-svg {
-    width: 10rem;
-    height: 3.75rem;
-  }
-  .seporator {
-    width: 8.3rem;
-    height: 0.1rem;
-  }
-  .header-text {
-    font-size: 1.15rem;
-    padding-top: 0;
-    word-spacing: 0.3rem;
-    letter-spacing: 0;
-    margin-bottom: 2.4rem;
-  }
-  .header-title {
-    margin: 1.4rem 0;
-    letter-spacing: 0.02rem;
-    word-spacing: 0;
-  }
-  .button {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header-features {
-    margin-top: 4.3rem;
-  }
-  .header-features-item {
-    padding: 1.6rem 2.5rem;
-  }
-  .header-features-text {
-    margin-top: 1.5rem;
-    font-size: 1.1rem;
-  }
-  .swiper-wrapper-hf {
-    height: 140px;
-  }
-  .header-image {
-    background-size: 500%;
-  }
-  .section-light {
-    margin-top: 8.4rem;
-    margin-bottom: 8.45rem;
-  }
-  .section-title-light {
-    font-size: 2.75rem;
-    margin-top: 1.6rem;
-    letter-spacing: 0.11rem;
-    margin-bottom: 2.4rem;
-  }
-  .steps-num {
-    font-size: 4rem;
-  }
-  .steps-num::after {
-    width: 19rem;
-    margin-left: 6rem;
-  }
-  .steps-title {
-    margin-top: 1rem;
-    letter-spacing: -0.5px;
-    margin-bottom: 0;
-  }
-  .steps-text {
-    font-size: 1.2rem;
-    margin-top: 0.4rem;
-    padding-right: 2rem;
-    letter-spacing: -0.1px;
-    margin-bottom: 2.33rem;
-    line-height: 150%;
+  .clients-logo:hover {
+    filter: grayscale(100%);
   }
   .button-link::before {
     width: 3.3rem;
     margin-right: 1.7rem;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 40rem;
+    }
+    .header-title {
+      font-size: 4rem;
+    }
+    .header-content {
+      padding-top: 4rem;
+    }
+    .card {
+      flex-basis: 100%;
+    }
+    .card-mark {
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "logo title"
+        "text text";
+    }
+    .card-marks-logo {
+      height: 100px;
+      width: 100px;
+    }
+    .card-marks-text {
+      margin-top: 1.5rem;
+    }
+    .founder-photo {
+      position: relative;
+      width: 100%;
+      margin-bottom: 3.125rem;
+    }
+    .section-title-clients {
+      padding-right: 2.9rem;
+    }
+    .clients-logo-list {
+      width: 100%;
+    }
+    .input-group-wrapper {
+      width: 100%;
+    }
+    .input-group {
+      height: 62px;
+      width: 100%;
+      margin-bottom: 1.65rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 92%;
+    }
+    .card-marks-logo {
+      height: 106px;
+      width: 100px;
+    }
+    .card-mark {
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "logo title"
+        "text text";
+    }
+    .card-marks-text {
+      margin-right: 0;
+    }
+    .logo-svg {
+      width: 10rem;
+      height: 3.75rem;
+    }
+    .seporator {
+      width: 8.3rem;
+      height: 0.1rem;
+    }
+    .header-text {
+      font-size: 1.15rem;
+      padding-top: 0;
+      word-spacing: 0.3rem;
+      letter-spacing: 0;
+      margin-bottom: 2.4rem;
+    }
+    .header-title {
+      margin: 1.4rem 0;
+      letter-spacing: 0.02rem;
+      word-spacing: 0;
+    }
+    .button {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-features {
+      margin-top: 4.3rem;
+    }
+    .header-features-item {
+      padding: 1.6rem 2.5rem;
+    }
+    .header-features-text {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
+    .swiper-wrapper-hf {
+      height: 140px;
+    }
+    .header-image {
+      background-size: 500%;
+    }
+    .section-light {
+      margin-top: 8.4rem;
+      margin-bottom: 8.45rem;
+    }
+    .section-title-light {
+      font-size: 2.75rem;
+      margin-top: 1.6rem;
+      letter-spacing: 0.11rem;
+      margin-bottom: 2.4rem;
+    }
+    .steps-num {
+      font-size: 4rem;
+    }
+    .steps-num::after {
+      width: 19rem;
+      margin-left: 6rem;
+    }
+    .steps-title {
+      margin-top: 1rem;
+      letter-spacing: -0.5px;
+      margin-bottom: 0;
+    }
+    .steps-text {
+      font-size: 1.2rem;
+      margin-top: 0.4rem;
+      padding-right: 2rem;
+      letter-spacing: -0.1px;
+      margin-bottom: 2.33rem;
+      line-height: 150%;
+    }
   }
   .button-link {
     letter-spacing: 0.14rem;
@@ -1804,30 +1834,6 @@ body {
   }
   .button-link::before {
     content: "";
-  }
-  .button-link:hover::before {
-    width: 3.3rem;
-  }
-  .card-mark:hover .al-blue {
-    fill: #828a99;
-  }
-  .card-mark:hover .ag-blue {
-    fill: #828a99;
-  }
-  .card-mark:hover {
-    border-color: rgb(235, 235, 240);
-  }
-  .card-mark:hover .card-marks-title {
-    color: rgb(41, 45, 51);
-  }
-  .button:hover {
-    background: rgb(92, 142, 230);
-  }
-  .card:hover .card-title {
-    color: rgb(41, 45, 51);
-  }
-  .card:hover {
-    border-color: rgb(235, 235, 240);
   }
   .clients-list {
     columns: 1;
@@ -1924,9 +1930,7 @@ body {
   .button-link-founder {
     display: none;
   }
-  .clients-logo:hover {
-    filter: grayscale(100%);
-  }
+
   .clients-logo {
     filter: grayscale(100%);
   }
@@ -2071,9 +2075,7 @@ body {
     height: 62px;
     margin-bottom: 18px;
   }
-  .footer-menu-link:hover {
-    color: rgb(130, 138, 153);
-  }
+
   .section-title-image {
     color: rgb(255, 255, 255);
   }
