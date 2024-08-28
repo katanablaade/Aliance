@@ -3,11 +3,11 @@
           <div class="swiper-wrapper blogs">
             <!-- Slides -->
             <a href="./first-slide-slider.php" class="swiper-slide blog-card">
-              <img
-                src="img/blog-photo-1.jpg"
-                alt="blog-photo-1"
-                class="blog-card-image"
-              />
+            <picture>
+              <source type="image/webp" srcset="img/blog-photo-1.webp">
+              <source type="image/jpg" srcset="img/blog-photo-1.jpg">
+              <img class="blog-card-image" src="img/blog-photo-1.jpg" alt="blog-photo-1">
+            </picture>
               <h3 class="blog-card-title <?= $display_n?>">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -18,11 +18,11 @@
               </p>
             </a>
             <a href="#" class="swiper-slide blog-card">
-              <img
-                src="img/blog-photo-2.jpg"
-                alt="blog-photo-2"
-                class="blog-card-image"
-              />
+            <picture>
+              <source type="image/webp" srcset="img/blog-photo-2.webp">
+              <source type="image/jpg" srcset="img/blog-photo-2.jpg">
+              <img class="blog-card-image" src="img/blog-photo-2.jpg" alt="blog-photo-2">
+            </picture>
               <h3 class="blog-card-title <?= $display_n?>">
                 Сложно сказать, почему жизнь прекрасна
               </h3>
@@ -33,11 +33,11 @@
               </p>
             </a>
             <a href="./first-slide-slider.php" class="swiper-slide blog-card">
-              <img
-                src="img/blog-photo-1.jpg"
-                alt="blog-photo-1"
-                class="blog-card-image"
-              />
+            <picture>
+              <source type="image/webp" srcset="img/blog-photo-1.webp">
+              <source type="image/jpg" srcset="img/blog-photo-1.jpg">
+              <img class="blog-card-image" src="img/blog-photo-1.jpg" alt="blog-photo-1">
+            </picture>
               <h3 class="blog-card-title <?= $display_n?>">
                 Современная методология разработки одухотворила всех причастных
               </h3>

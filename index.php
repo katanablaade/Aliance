@@ -173,5 +173,5 @@
       </div>
       <!-- /.container -->
     </section>
-    <?php include_once('./template-parts/cta.php')?>;
+    <?php include_once('./template-parts/cta.php')?>
     <?php include_once('./template-parts/footer.php')?>

@@ -17,11 +17,11 @@
               </p>
             </div>
             <!-- /.card-content -->
-            <img
-              src="img/avto-him.png"
-              alt="Автомобильная химия"
-              class="card-image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/avto-him.webp">
+              <source type="image/png" srcset="img/avto-him.png">
+              <img class="card-image" src="img/avto-him.png" alt="avto-him">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -32,7 +32,11 @@
               </p>
             </div>
             <!-- /.card-content -->
-            <img src="img/bit-him.png" alt="Бытовая химия" class="card-image" />
+            <picture>
+              <source type="image/webp" srcset="img/bit-him.webp">
+              <source type="image/png" srcset="img/bit-him.png">
+              <img class="card-image" src="img/bit-him.png" alt="bit-him">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -42,11 +46,11 @@
               </p>
             </div>
             <!-- /.card-content -->
-            <img
-              src="img/dezinfect.png"
-              alt="Дезинфицирующие средства"
-              class="card-image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/dezinfect.webp">
+              <source type="image/png" srcset="img/dezinfect.png">
+              <img class="card-image" src="img/dezinfect.png" alt="dezinfect">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -57,11 +61,11 @@
               </p>
             </div>
             <!-- /.card-content -->
-            <img
-              src="img/dezinfect.png"
-              alt="Пищевые аэрозоли"
-              class="card-image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/dezinfect.webp">
+              <source type="image/png" srcset="img/dezinfect.png">
+              <img class="card-image" src="img/dezinfect.png" alt="dezinfect">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -71,11 +75,11 @@
               </p>
             </div>
             <!-- /.card-content -->
-            <img
-              src="img/avto-him.png"
-              alt="Косметическая продукция"
-              class="card-image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/avto-him.webp">
+              <source type="image/png" srcset="img/avto-him.png">
+              <img class="card-image" src="img/avto-him.png" alt="avto-him">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -86,11 +90,11 @@
               </p>
             </div>
             <!-- /.card-content -->
-            <img
-              src="img/bit-him.png"
-              alt="Краски аэрозольные"
-              class="card-image"
-            />
+            <picture>
+              <source type="image/webp" srcset="img/bit-him.webp">
+              <source type="image/png" srcset="img/bit-him.png">
+              <img class="card-image" src="img/bit-him.png" alt="bit-him">
+            </picture>
           </a>
         </div>
       </div>

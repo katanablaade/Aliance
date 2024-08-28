@@ -1382,8 +1382,8 @@ body {
     overflow-y: auto;
     z-index: 2;
     background-color: #fff;
-    padding-top: 5rem;
-    padding-left: 1.5rem;
+    padding-top: 4rem;
+    padding-left: 1.2rem;
     padding-right: 1.5rem;
   }
   .mobile-menu.is-open {
@@ -1391,12 +1391,13 @@ body {
   }
   .mobile-menu-nav {
     margin: 0;
-    margin-top: 30px;
+    margin-top: 32px;
     list-style: none;
     padding: 0;
+    margin-bottom: 32px;
   }
   .mobile-menu-nav-item {
-    margin-bottom: 2rem;
+    margin-bottom: 2.89rem;
   }
   .mobile-menu-link {
     text-decoration: none;
@@ -1407,8 +1408,8 @@ body {
   .mobile-submenu {
     list-style: none;
     padding: 0;
-    padding-left: 2rem;
-    margin-top: 1rem;
+    padding-left: 1.7rem;
+    margin-top: 2rem;
   }
   .mobile-submenu-link {
     text-decoration: none;
@@ -1425,14 +1426,14 @@ body {
     font-weight: 600;
     line-height: 160%;
     border-top: 1px solid rgb(235, 235, 240);
-    padding-top: 2rem;
-    margin-bottom: 1rem;
+    padding-top: 2.6rem;
+    margin-bottom: 1.5rem;
   }
   .mobile-info {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.85rem;
   }
   .mobile-info-address,
   .mobile-info-email {
@@ -1449,7 +1450,7 @@ body {
     gap: 15px;
   }
   .mobile-submenu-item:not(:last-child) {
-    padding-bottom: 10px;
+    padding-bottom: 9px;
   }
   .close-menu .mobile-menu-line:nth-child(2) {
     display: none;
@@ -1833,6 +1834,7 @@ body {
   }
   .clients-logo-item {
     flex-basis: 50%;
+    padding-left: 2.6rem;
   }
   .section-title-clients {
     display: none;
@@ -1887,7 +1889,7 @@ body {
     gap: 1.6rem;
   }
   .clients-logo {
-    max-width: 35%;
+    max-width: 74%;
   }
   .clients-logo-list {
     margin-top: 0;

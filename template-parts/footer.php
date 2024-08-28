@@ -186,7 +186,11 @@
     </div>
     <div class="modal" id="alert-modal">
       <div class="modal-dialog">
-        <img src="img/modal-image.png" alt="modal-image" class="modal-image">
+        <picture>
+          <source type="image/webp" srcset="img/modal-image.webp">
+          <source type="image/png" srcset="img/modal-image.png">
+          <img class="modal-image" src="img/modal-image.png" alt="modal-image">
+        </picture>
         <a href="#" class="modal-close" data-toggle="modal" data-target="#alert-modal">
           <svg class="close-icon">
             <use href="img/sprite.svg#close"></use>
