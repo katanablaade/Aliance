@@ -167,7 +167,6 @@
               >
             </div>
           </div>
-          <!-- input-group-wrapper -->
           <div class="modal-form-footer">
             <button type="submit" class="button modal-form-button">
               Отправить заявку
