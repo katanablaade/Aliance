@@ -10,9 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"
       />
-      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-      <link rel="stylesheet" href="css/normalize.css" />
-      <link rel="stylesheet" href="css/style.css" />
+     <?php include_once("template-parts/favicon.php")?>
       <title><?= $page_title ?> - Aliance Production</title>
     </head>
   </head>

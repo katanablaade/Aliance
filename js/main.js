@@ -32,7 +32,10 @@ const closeMenu = (event) => {
   menu.classList.remove("is-open"); // убирает класс is-open
   mMenuToggle.classList.remove("close-menu");
   document.body.style.overflow = ""; // возвращает прокрутку сайта под меню
-  this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  if (window.location.pathname === "/") {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
+  this.scrollY > 1 ? changeNavHeight("4rem") : changeNavHeight("5.7rem"); // формулировка вопроса - если да, то 'действие 1', иначе 'действие 2'
 };
 
 window.addEventListener("scroll", () => {
@@ -195,33 +198,39 @@ forms.forEach((form) => {
         fetch(thisForm.getAttribute("action"), {
           method: thisForm.getAttribute("method"),
           body: formData,
-        }).then((response) => {
-          if (response.ok) {
-            thisForm.reset();
-            currentModal.classList.remove("is-open");
-            alertModal.classList.add("is-open");
-            currentModal = alertModal;
-            modalDialog = currentModal.querySelector(".modal-dialog");
-            /* отслеживаем клик по окну и пустым областям */
-            currentModal.addEventListener("mousedown", (event) => {
-              /* если клик в пустую область (не диалог) */
-              if (!event.composedPath().includes(modalDialog)) {
-                /* закрываем окно */
+        })
+          .then((response) => {
+            if (response.ok) {
+              thisForm.reset();
+              if (currentModal) {
+                currentModal.classList.remove("is-open");
               }
-              const modalCloseButton = document.querySelectorAll(
-                "[data-toggle=modal-close]"
-              );
-              modalCloseButton.forEach((button) => {
-                button.addEventListener("click", (event) => {
-                  event.preventDefault();
-                  currentModal.classList.remove("is-open");
+              alertModal.classList.add("is-open");
+              currentModal = alertModal;
+              modalDialog = currentModal.querySelector(".modal-dialog");
+              /* отслеживаем клик по окну и пустым областям */
+              currentModal.addEventListener("mousedown", (event) => {
+                /* если клик в пустую область (не диалог) */
+                if (!event.composedPath().includes(modalDialog)) {
+                  /* закрываем окно */
+                }
+                const modalCloseButton = document.querySelectorAll(
+                  "[data-toggle=modal-close]"
+                );
+                modalCloseButton.forEach((button) => {
+                  button.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    currentModal.classList.remove("is-open");
+                  });
                 });
               });
-            });
-          } else {
-            alert(response.statusText);
-          }
-        });
+            } else {
+              alert("Ошибка: " + response.status);
+            }
+          })
+          .catch((error) => {
+            alert(error);
+          });
       };
       ajaxSend(formData);
     });
